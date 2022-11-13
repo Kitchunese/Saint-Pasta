@@ -4,7 +4,6 @@
     font-size: 18px;
     line-height: 17px;
     color: black;
-    
 }
 .logo{
     width: 199px;
@@ -31,6 +30,18 @@
     padding-top: 1px;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
 .call{
     color: #1F1F1F;
     display: block;
@@ -38,6 +49,15 @@
     font-size: 12px;  
 
 }
+
+
+
+
+
+
+
+
+
 .call:hover{
     transition: 0.5s all;
     color: #D38B13;
