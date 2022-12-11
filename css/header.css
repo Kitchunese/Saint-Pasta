@@ -4,15 +4,27 @@
     font-size: 18px;
     line-height: 17px;
     color: black;
+    padding: 10px;
+    border-radius: 10px 20px;
+    transition: 0.5s background-color ease-in-out,
+                0.1s box-shadow ease-in-out,
+                0.5s transform ease-in-out;
 }
 .logo{
     width: 199px;
     height: 30px;
 }
-.menu__link:hover{
-    transition: 0.5s ;
-    text-decoration: underline;
-    padding: 25px;
+.menu__link:hover,
+.menu__link:focus{
+    background-color: #EEDEBF;
+    box-shadow: 1px 5px 8px 0.1px #e5cc99;
+    transition: 1s background-color ease-in-out,
+                0.1s box-shadow ease-in-out,
+                0.5s transform ease-in-out;
+    padding: 10px;
+    
+
+    
 }
 .phone{
     color: #000;
@@ -29,38 +41,21 @@
     margin-right: 5px;
     padding-top: 1px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 .call{
     color: #1F1F1F;
     display: block;
-    margin-left: 45px;
+    margin-left: 55px;
     font-size: 12px;  
+    transition: 0.2s color ease-in-out;
 
 }
-
-
-
-
-
-
-
-
-
-.call:hover{
+.call:hover,
+.call:focus{
     transition: 0.5s all;
     color: #D38B13;
-    border-bottom: dashed 0.5px black;
+    text-decoration: underline dashed #D38B13;
+    transition: 0.2s color ease-in-out,
+                1s text ease-in-out;
     max-width: 82px;
 }
+
