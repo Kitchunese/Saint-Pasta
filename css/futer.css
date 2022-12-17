@@ -1,8 +1,3 @@
-.footer__info{
-    height: 269px;
-    background: rgba(33, 33, 33, 0.47);
-    backdrop-filter: blur(5px);
-}
 .footer{
     width: 100%;
 }
@@ -31,6 +26,7 @@
     justify-content: space-around;
     width: 80%;
     height: 365px;
+    font-family: 'Montserrat';
 }
 .section10{
     width: 100%;
@@ -41,10 +37,10 @@
     height: 970px;
     background-image: url('../img/footer_fon.png');
     background-repeat: no-repeat;
-
 }
 .map__adresses {
     list-style: none;
+    font-family: 'Montserrat';
 }
 .map__adresses li:before {
     content: ">";
@@ -59,10 +55,98 @@
     line-height: 168.4%;
     position: relative;
 }
-.contact__button{
+.flex__Questions {
+    height: 600px;
+    display: flex;
+    align-items: center;
+    padding: 170px;
+    margin-bottom: 1rem;
+}
+.pasta__Questions {
+    display: flex;
+    flex-direction: column;
+    height: 970px;
+    background-image: url('../img/footer_fon.png');
+    background-repeat: no-repeat;
+}
+.container__contactUs {
+    width: 40.5%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.container__contactUs p:first-child {
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 121.9%;
+    text-transform: uppercase;
+}
+.container__contactUs p:nth-child(2) {
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 155.4%;
+}
+input::placeholder {
+    color: #dbdbdb;
+}
+.form-control {
+    background-color: transparent;
+    outline: 0;
+    border: none;
+    border-radius: 0;
+    border-bottom: 2px solid white;
+    color: white;
+}
+.form-control::placeholder {
+    color: white;
+}
+.form-control:focus {
+    background-color: transparent;
+    color: white;
+    box-shadow: none;
+}
+.floating-label-group {
+    position: relative;
+    margin-top: 35px;
+    margin-bottom: 45px;
+    width: 60%;
+}
+.floating-label-group .floating-label {
+    font-size: 13px;
+    color: transparent;
+    position: absolute;
+    pointer-events: none;
+    top: 9px;
+    left: 12px;
+    transition: ease-in 120ms;
+}
+.floating-label-group input:focus ~ .floating-label,
+.floating-label-group input:not(:focus):valid ~ .floating-label {
+    top: -15px;
+    bottom: 0px;
+    left: 0px;
+    font-size: 12px;
+    opacity: 1;
+    color: white;
+}
+.floating-label-group :focus::placeholder {
+    color: transparent;
+}
+  .contactUs__button {
     height: 46px;
     width: 136px;
     background-color: #D38B13;
     border: none;
     color: white;
+}
+@media (min-width: 1024px) {
+    .pasta__Questions {
+      height: 966px;
+    }
+    .flex__Questions {
+      height: 697px;
+    }
 }
