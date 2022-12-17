@@ -1,5 +1,11 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 .menu__link{
     font-style: normal;
+    font-family: 'Montserrat';
     font-weight: 500;
     font-size: 18px;
     line-height: 17px;
@@ -22,9 +28,112 @@
                 0.1s box-shadow ease-in-out,
                 0.5s transform ease-in-out;
     padding: 10px;
+ 
+}
+.swiper2{
+    position: relative;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
     
+}
 
+.wraperAnn{
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1920px;
+    padding: 0 auto;
+}
+
+
+:root{
+    --cur: 1;
+}
+
+.slider4__radio{
+    position: relative;
+    left: 840px;
+    top: 757px;
+    z-index: 1;
+    width: 50px;
+}
+input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  
+    border-radius: 50%;
+    width: 1px;
+    height: 50px;
+    margin: 5px;
+    border: none;
+    transition: 0.2s all linear;
+    outline: none;
+    margin-right: 5px;
+    background-color: #66536B;
+    position: relative;
+    top: 4px;
+  }
+  
+  input:checked {
+    border:none;
+    background-color: #EEDEBF;
+  }
+.slider4 {
+    position: relative;   
+    width: 1920px;
+    overflow-x: hidden;
+}
+.slider4__list{
+    display: flex;
+    transition: transform 2s;
+}
+#slider4-btn1{
+    transform:scale(0.5);
+}
+#slider4-btn2{
+    transform:scale(0.5);
+}
+
+#slider4-btn3{
+    transform:scale(0.5);
+}
+.slider4__item{
+    flex-shrink: 0;
+    min-width: 1920px;
+    text-align: center;
+    max-height: 779px;
+    overflow-y: hidden;
+}
+.slider4__img{
+    width: 100%;
+    overflow:auto;
+
+}
+.slider4__btn{
+    z-index: 10px;
+    position: absolute;
+    top:45%;
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    font-size: 20px;
+    background: rgba(114, 114, 116, 0.5);
+    border: none;
+}
+
+.slider4__radio--next:checked ~ .slider4__list{
+    transform: translate(calc(var(--cur)*(-1920px)));
     
+}
+.slider4__radio--next2:checked ~ .slider4__list{
+    transform: translate(calc(var(--cur)*(-3840px)));
+    
+}
+.gg{
+    position: relative;
+    top: 5px;
 }
 .phone{
     color: #000;
@@ -41,7 +150,10 @@
     margin-right: 5px;
     padding-top: 1px;
 }
+
 .call{
+    text-decoration: none;
+    margin: 5px 0;
     color: #1F1F1F;
     display: block;
     margin-left: 55px;
@@ -53,7 +165,7 @@
 .call:focus{
     transition: 0.5s all;
     color: #D38B13;
-    text-decoration: underline dashed #D38B13;
+    text-decoration: underline dotted #D38B13;
     transition: 0.2s color ease-in-out,
                 1s text ease-in-out;
     max-width: 82px;
