@@ -161,11 +161,12 @@ main{
     align-items: center;
 }
 .slide{
+    display: flex;
     padding-top: 20px;
 }
-.right{
+/* .right{
     padding-left: 10px;
-}
+} */
 .team__iconprof{
 
 }
@@ -265,6 +266,48 @@ main{
     border: 1px solid #606060;
     box-sizing: border-box;
     border-radius: 22px;
+    transition: 0.3s color ease-in-out, 0.3s background-color ease-in-out;
+}
+.products_button:hover{
+    color: black;
+    background-color: #D38B13;
+    transition: 0.3s color ease-in-out, 0.3s background-color ease-in-out;
+}
+.products_button:focus{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 168.4%;
+    width: 196px;
+    height: 44px;
+    border: 1px solid #606060;
+    border-color: #996d21;;
+    box-sizing: border-box;
+    border-radius: 22px;
+    transition: 0.3s color ease-in-out, 0.3s background-color ease-in-out;
+}
+.cd_btn:hover{
+    border-color: #D38B13;
+    color: black;
+    background-color: white;
+    transition:0.3s border-color ease-in-out, 0.3s color ease-in-out, 0.3s background-color ease-in-out;
+}
+.cd_btn:focus{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 11px 27px;
+    gap: 10px;
+    background: #D38B13;
+    border: none;
+    color: #FFFFFF;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 168.4%;
+    transition: 0.2s border-color ease-in-out, 0.3s color ease-in-out, 0.3s background-color ease-in-out;
 }
 .our_products_buttons a{
     font-family: 'Montserrat';
@@ -274,6 +317,7 @@ main{
     line-height: 168.4%;
     color: #AD8442;
     text-decoration: none;
+    
 }
 .product_list{
 
@@ -353,6 +397,8 @@ main{
     font-weight: 600;
     font-size: 14px;
     line-height: 168.4%;
+    transition: 0.2s border-color ease-in-out, 0.3s color ease-in-out, 0.3s background-color ease-in-out;
+
 }
 .card_button a{
     margin-left: 20px;
@@ -363,7 +409,14 @@ main{
     font-size: 14px;
     line-height: 168.4%;
     color: #2F2F2F;
+    transition: 0.3s color ease-in-out;
 }
+.card_button a:hover,
+.card_button a:focus{
+    color: #D38B13;
+    transition: 0.3s color ease-in-out;
+}
+
 .section5{
     max-width: 1920px;
     min-height: 617px;
@@ -481,4 +534,37 @@ main{
 .count_border{
     border-bottom: 2px solid #EBC79E;
 
+}
+.left{
+    transform: scale(1);
+    transition: transform 0.5s;
+}
+.left:hover,
+.left:focus{
+    transform: scale(1.2);
+    transition: transform 0.5s;
+}
+.right{
+    padding-left: 20px;
+    transform: scale(1);
+    transition: transform 0.5s;
+}
+.right:hover,
+.right:focus{
+    transform: scale(1.2);
+    transition: transform 0.5s;
+}
+@media(max-width: 320px){
+    .wrapper{
+        max-width: 320px;
+        margin: 0 auto;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .section1{
+        max-width: 320px;
+    }
+    .ph{
+        width: 320px;
+    }
 }
