@@ -16,9 +16,18 @@
                 0.1s box-shadow ease-in-out,
                 0.5s transform ease-in-out;
 }
+.header{
+    font-family: 'Montserrat';
+    font-size: 16px;
+    font-style: normal;
+    line-height: 21px;
+}
 .logo{
     width: 199px;
     height: 30px;
+    margin-right: 50px;
+    margin-bottom: 5px;
+
 }
 .menu__link:hover,
 .menu__link:focus{
@@ -153,7 +162,7 @@ input {
 
 .call{
     text-decoration: none;
-    margin: 5px 0;
+    margin: 0;
     color: #1F1F1F;
     display: block;
     margin-left: 55px;
@@ -168,6 +177,6 @@ input {
     text-decoration: underline dotted #D38B13;
     transition: 0.2s color ease-in-out,
                 1s text ease-in-out;
-    max-width: 82px;
+    min-width: 82px;
 }
 
