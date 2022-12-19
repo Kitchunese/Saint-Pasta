@@ -317,8 +317,17 @@ main{
     line-height: 168.4%;
     color: #AD8442;
     text-decoration: none;
-    
+    transition: 0.3s color ease-in-out;
 }
+.our_products_buttons a:hover{
+    color: #2F2F2F;
+    transition: 0.3s color ease-in-out;
+}
+.our_products_buttons a:focus{
+    color: #AD8442;
+    transition: 0.3s color ease-in-out;
+}
+
 .product_list{
 
 }
@@ -472,6 +481,15 @@ main{
     font-size: 16px;
     line-height: 168.4%;
     color: #AD8442;
+    transition: 0.3s color ease-in-out;
+}
+.about_us_txt a:hover{
+    color: #2F2F2F;
+    transition: 0.3s color ease-in-out;
+}
+.about_us_txt a:focus{
+    color: #AD8442;
+    transition: 0.3s color ease-in-out;
 }
 
 .section6{

@@ -195,6 +195,15 @@
     font-style: normal;
     left: 630px;
     top: 45px;
+    transition: 0.3s color ease-in-out;
+}
+.nizmenu:hover{
+    color: #AD8442;
+    transition: 0.3s color ease-in-out;
+}
+.nizmenu:focus{
+    color: #FFFFFF;
+    transition: 0.3s color ease-in-out;
 }
 
 .poisk{
@@ -236,6 +245,13 @@
     left: 865px;
     top: 45px;
     width: 30px;
+    transform: scale(1);
+    transition: transform 0.5s;
+}
+.vk:hover,
+.vk:focus{
+    transform: scale(1.2);
+    transition: transform 0.5s;
 }
 .face{
     position: relative;
@@ -243,6 +259,13 @@
     left: 900px;
     top: 49px;
     width: 25px;
+    transform: scale(1);
+    transition: transform 0.5s;
+}
+.face:hover,
+.face:focus{
+    transform: scale(1.2);
+    transition: transform 0.5s;
 }
 .telniz{
     position: relative;
@@ -255,6 +278,14 @@
     font-family: 'Montserrat';
     font-style: normal;
     line-height: 23px;
+}
+.telniz:hover{
+    color: #AD8442;
+    transition: 0.3s color ease-in-out;
+}
+.telniz:focus{
+    color: #FFFFFF;
+    transition: 0.3s color ease-in-out;
 }
 .telniz2{
     position: relative;
