@@ -149,15 +149,16 @@
     line-height: 155.4%;
     font-style: normal;
 }
-.btnclick{
+/* .btnclick{
     position: relative;
     top: 245px;
     right: 55px;
     background: #D38B13;
     width: 170px;
     height: 65px;
+    padding: 20px;
     transition: 0.5s background-color ease-in-out;
-}
+} */
 .otpravit{
     color: #FFFFFF;
     font-size: 16px;
@@ -168,8 +169,10 @@
 }
 .btnclick:focus,
 .btnclick:hover{
+    color: black;
     background-color: #ffffff;
-    transition: 0.5s background-color ease-in-out;
+    transition: 0.5s background-color ease-in-out, 0.3s color ease-in-out;
+
 }
 .niz{
     position: relative;
@@ -349,4 +352,36 @@
     left: 350px;
    
 
+}
+.fon input {
+
+  
+    border-radius: 0px;
+
+}
+.btnclick{
+        position: relative;
+    top: 245px;
+    right: 55px;
+    background: #D38B13;
+    width: 170px;
+    height: 65px;
+    padding: 20px;
+    border: none;
+    transition: 0.5s background-color ease-in-out;
+}
+
+.btnclick a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Montserrat';
+    line-height: 17px;
+    font-size: 16px;
+    font-style: normal;
+
+}
+.btnclick a:hover,
+.btnclick a:focus{
+    color: black;
+    transition: 0.3s color ease-in-out;
 }

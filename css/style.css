@@ -167,8 +167,10 @@ main{
 /* .right{
     padding-left: 10px;
 } */
-.team__iconprof{
-
+.team__iconprof img{
+ max-width: 45%;
+ height: 100%;
+ border-radius: 120px;
 }
 .team_title{
     display: flex;
